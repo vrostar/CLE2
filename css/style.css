@@ -1,0 +1,45 @@
+label {
+    display: inline-block;
+    width: 80px;
+    font-weight: bold;
+}
+
+/* This would be the way to go without PHP */
+tbody tr:nth-child(odd) {
+    background-color: darkgrey;
+}
+tfoot td {
+    text-align: center;
+    font-weight: bold;
+}
+
+td {
+    padding: 0 10px;
+}
+
+.errors {
+    color: red;
+}
+
+header {
+    background-color: pink;
+    padding: 20px;
+    text-align: left;
+    font-size: 35px;
+    color: white;
+}
+
+footer {
+    background-color: dimgrey;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+body {
+    background-color: antiquewhite;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    font-family: 'sans-serif';
+}
