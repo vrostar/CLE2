@@ -36,17 +36,29 @@ mysqli_close($db);
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Details - <?= $user['name'] ?></title>
+    <link rel="stylesheet" href="css/style.css?v=<?php echo time(); ?>">
 </head>
 <body>
-<h2><?= $user['name'] . ' - ' . $user['request'] ?></h2>
+<header>
+    <img src="images/feeble1.png">
+    <h1>Request Details</h1>
+</header>
+<section>
+<h1><?= $user['name'] . ' - ' . $user['request'] ?></h1>
+
 
 <ul>
     <li>EMAIL: <?= $user['email'] ?></li>
     <li>VERZOEK: <?= $user['request'] ?></li>
     <li>INFO: <?= $user['info'] ?></li>
 </ul>
+    <h1><a href="delete.php">delete</a></h1>
 <div>
     <a href="index.php">Go back to the list</a>
 </div>
+</section>>
 </body>
 </html>
+<footer>
+    <p>&copy; FEEBLE</p>
+</footer>

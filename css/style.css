@@ -1,16 +1,28 @@
+@font-face {
+    font-display: block;
+    font-family: "TeX Gyre Heros Condensed";
+    src: url("https://type.cargo.site/files/TeXGyreHerosCondensed-Regular.woff") format("woff");
+    font-style: normal;
+    font-weight: normal;
+    unicode-range: U+0000-DFFF, U+F900-FFFD;
+}
+
 label {
     display: inline-block;
     width: 80px;
     font-weight: bold;
 }
 
-/* This would be the way to go without PHP */
-tbody tr:nth-child(odd) {
+tbody {
     background-color: darkgrey;
 }
 tfoot td {
     text-align: center;
     font-weight: bold;
+}
+
+thead {
+    background-color: darkgrey;
 }
 
 td {
@@ -22,11 +34,24 @@ td {
 }
 
 header {
-    background-color: pink;
-    padding: 20px;
-    text-align: left;
-    font-size: 35px;
+    background-color: #ffbeff;
+    background-image: url('https://freight.cargo.site/w/1000/i/342d3ecd769707cc69f3765beaeaddd06e772fe37d9d934f849e071e1889e817/feeble-basic-logo.png');
+    background-attachment: fixed;
+    background-size: 62px 21px;
+    text-align: center;
     color: white;
+}
+
+h1 {
+    font-family: "TeX Gyre Heros Condensed";
+    padding: 15px;
+    font-size: 42px;
+    color: #282828;
+}
+
+img {
+    padding: 12px;
+    margin: 8px;
 }
 
 footer {
@@ -37,9 +62,59 @@ footer {
 }
 
 body {
-    background-color: antiquewhite;
+    background-color: floralwhite;
     font-size: 18px;
     margin: 0;
     padding: 0;
     font-family: 'sans-serif';
 }
+
+table {
+    width: auto;
+    margin: 20px;
+    padding: 18px;
+    color: black;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width:800px;
+}
+
+input[type=text], input[type=email], select, textarea {
+    width: 266px;
+    padding: 12px;
+    border: 1px solid #ffbeff;
+    border-radius: 24px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+
+}
+
+input[id=info], select, textarea {
+    width: 420px;
+    height: 240px;
+    padding: 12px;
+    border: 1px solid #ffbeff;
+    border-radius: 24px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+
+}
+
+input[type=submit] {
+    background-color: #ffbeff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: hotpink;
+}
+
