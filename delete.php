@@ -58,6 +58,11 @@ if (isset($_POST['submit'])) {
     <title>Delete - <?= $user['name'] ?></title>
     <link rel="stylesheet" href="css/style.css?v=<?php echo time(); ?>">
 </head>
+<header>
+    <img src="images/feeble1.png">
+    <h1>Request Details</h1>
+</header>
+<section>
 <body>
 <h2>Delete - <?= $user['name'] ?></h2>
 <form action="" method="post">
@@ -68,4 +73,5 @@ if (isset($_POST['submit'])) {
     <input type="submit" name="submit" value="Verwijderen"/>
 </form>
 </body>
+</section>
 </html>

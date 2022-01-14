@@ -81,7 +81,7 @@ if (isset($_POST['submit'])) {
 </form>
 </section>
 <div>
-    <a href="index.php">Hier komt de login</a>
+    <a href="login/login.php">login</a>
 </div>
 </body>
 </html>

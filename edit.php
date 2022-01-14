@@ -21,7 +21,7 @@ if (isset($_POST['submit'])) {
         //Save the record to the database
         $query = "UPDATE users SET name='$name',request='$request',email='$email',info='$info' WHERE id='$userId'";
         $result = mysqli_query($db, $query) or die('Error: '.mysqli_error($db). ' with query ' . $query);
-
+        
         if ($result) {
             header('Location: index.php');
             exit;

@@ -52,7 +52,7 @@ mysqli_close($db);
     <li>VERZOEK: <?= $user['request'] ?></li>
     <li>INFO: <?= $user['info'] ?></li>
 </ul>
-    <h1><a href="delete.php">delete</a></h1>
+    <h1><a href="delete.php?id=<?= $user['id'] ?>">Delete</a></h1>
 <div>
     <a href="index.php">Go back to the list</a>
 </div>

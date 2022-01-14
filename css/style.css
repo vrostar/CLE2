@@ -82,7 +82,7 @@ section {
     max-width:800px;
 }
 
-input[type=text], input[type=email], select, textarea {
+input[type=text], input[type=email], input[type=password], select, textarea {
     width: 266px;
     padding: 12px;
     border: 1px solid #ffbeff;
