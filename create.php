@@ -23,7 +23,7 @@ if (isset($_POST['submit'])) {
         $result = mysqli_query($db, $query) or die('Error: '.mysqli_error($db). ' with query ' . $query);
 
         if ($result) {
-            header('Location: index.php');
+            header('Location: succes.php');
             exit;
         } else {
             $errors['db'] = 'Something went wrong in your database query: ' . mysqli_error($db);

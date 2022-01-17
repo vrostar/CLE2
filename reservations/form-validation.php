@@ -14,4 +14,4 @@ if ($email == "") {
 if ($info == "") {
     $errors['info'] = 'Info cannot be empty';
 }
-
+// SERVER SIDE VALIDATION

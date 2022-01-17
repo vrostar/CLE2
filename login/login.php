@@ -65,9 +65,13 @@ if (isset($_POST['submit'])) {
 </header>
 <section>
 <h1>Inloggen</h1>
-<?php if ($login == true) { ?>
+    <?php
+    if ($login == true && $_SESSION['LoginUser']['id'] == 10 ) { ?>
+        <p>Je bent ingelogd!</p>
+        <p><a href="logout.php">Log Out</a> / <a href="../index.php">Reservations</a></p>
+    <?php } elseif ($login == true) { ?>
     <p>Je bent ingelogd!</p>
-    <p><a href="logout.php">Uitloggen</a> / <a href="../index.php">Naar Reserveringen</a></p>
+    <p><a href="logout.php">Log Out</a> / <a href="../create.php">Make A Request</a></p>
 <?php } else { ?>
     <form action="" method="post">
         <div>
@@ -89,9 +93,9 @@ if (isset($_POST['submit'])) {
     <div>
         <a href="register.php">Register here</a>
     </div>
-    <div>
-        <a href="../create.php">Return to create</a>
-    </div>
+<!--    <div>-->
+<!--        <a href="../create.php">Return to create</a>-->
+<!--    </div>-->
 </section>
 </body>
 </html>
